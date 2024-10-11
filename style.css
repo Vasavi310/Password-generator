@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background: rgb(63, 161, 251);
+    background: linear-gradient(to left, #92EFFD, #4E65FF)
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(30vh - 2rem);
+}
+
+.title-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transform: skew(0, -10deg);
+}
+.sweet-title {
+    order: 2;
+    color: #fde9ff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 0.75em;
+    text-align: center;
+    text-shadow: 3px 1px 1px #FF00FF, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff, 3px 3px 1px #165bfb, 5px 3px 1px #4af7ff, 4px 4px 1px #165bfb, 6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff, 6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb, 9px 7px 1px #4af7ff;
+    span {
+        display: block;
+        position: relative;
+        &:before {
+            text-shadow: 2px 2px 1px #e94aa1, -1px -1px 1px #c736f9, -2px 2px 1px #e94aa1, 1px -1px 1px #f736f9;
+            z-index: 1;
+        }
+        &:nth-child(1) {
+            padding-right: 2.25rem;
+        }
+        &:nth-child(2) {
+            padding-left: 2.25rem;
+        }
+    }
+}
+
+.disclaimer {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}
+
+.generator {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.generator .password input {
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.generator .password button {
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:"Times New Roman", Times, serif;
+    &:hover {
+        background: linear-gradient(90deg, #3f51b5, transparent)#c736f9;
+        color: #fff;
+    }
+}
+.generator .range {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #ffff;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.generator .options {
+    color: #ffff;
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.generator .options input {
+    width: 20px;
+    height: 20px;
+    &:hover {
+        cursor: pointer;
+    }
+    &:checked {
+        left: 9px;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+    }
+}
+
+.generate {
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:"Times New Roman", Times, serif;
+    &:hover {
+        background: linear-gradient(90deg, #3f51b5, transparent)#c736f9;
+        color: #fff;
+    }
+    margin-top: 25px;
+}
+
+.txt {
+    margin-top: 30px;
+    color: #ffff;
+    opacity: 0.7;
+}
+
+.txt span {
+    font-weight: 600;
+    font-style: italic;
+}
